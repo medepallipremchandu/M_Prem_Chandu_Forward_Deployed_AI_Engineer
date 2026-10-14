@@ -4,13 +4,15 @@ export const profile = {
   role: 'Forward Deployed AI Engineer',
   tagline: 'GenAI & Agentic Systems · Voice AI · AI-Driven Development',
   email: 'premchandumedepalli@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/medepalli-prem-chandu',
+  site: 'https://medepallipremchandu.github.io/M_Prem_Chandu_Forward_Deployed_AI_Engineer/',
   phone: '+91 7222813555',
   location: 'Hyderabad, India',
   resume: 'resume.pdf',
   intro:
     'I embed with business stakeholders and clients to turn ambiguous operational problems into production GenAI systems — from discovery and rapid prototype to deployed, adopted product.',
   summary: [
-    'Forward Deployed AI Engineer at SAGE IT (since Aug 2024). I work directly with recruiters, sales and client teams to map workflows, find high-value AI use cases, and own delivery from requirements through deployment, adoption and iteration.',
+    'Associate Software Engineer at SAGE IT (since Aug 2024), working as a forward deployed AI engineer. I work directly with recruiters, sales and client teams to map workflows, find high-value AI use cases, and own delivery from requirements through deployment, adoption and iteration.',
     'I build AI-natively — agentic coding tools (Claude Code, Cursor, Kiro) with spec-driven, test-backed workflows — to ship full-stack platforms in days to weeks instead of months. I bring deep domain understanding of staffing and recruitment operations.',
   ],
 }

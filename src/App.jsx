@@ -86,7 +86,7 @@ function Hero() {
         <div className="cta">
           <a className="btn btn-primary" href="#projects">View my work →</a>
           <a className="btn btn-ghost" href={profile.resume} download="Prem_Chandu_Medepalli_Resume.pdf">Download resume</a>
-          <a className="btn btn-ghost" href={`mailto:${profile.email}`}>Get in touch</a>
+          <a className="btn btn-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
         <div className="stats">
           {stats.map(s => (
@@ -351,6 +351,7 @@ function Contact() {
             <a className="btn btn-primary" href={`mailto:${profile.email}`}>✉ {profile.email}</a>
             <button className="btn btn-ghost" onClick={copy}>{copied ? '✓ Copied' : 'Copy email'}</button>
             <a className="btn btn-ghost" href={`tel:${profile.phone.replace(/\s/g, '')}`}>☎ {profile.phone}</a>
+            <a className="btn btn-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">in LinkedIn ↗</a>
           </div>
           <p className="muted small">📍 {profile.location}</p>
         </div>
@@ -377,7 +378,11 @@ export default function App() {
       <footer className="footer">
         <div className="container">
           <span>© {new Date().getFullYear()} {profile.name}</span>
-          <a href="#top">Back to top ↑</a>
+          <span className="footer-links">
+            <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href={`mailto:${profile.email}`}>Email</a>
+            <a href="#top">Back to top ↑</a>
+          </span>
         </div>
       </footer>
     </>
