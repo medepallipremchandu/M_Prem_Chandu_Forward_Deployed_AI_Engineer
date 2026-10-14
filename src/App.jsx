@@ -77,7 +77,6 @@ function Hero() {
     <section className="hero" id="top">
       <div className="hero-glow" aria-hidden="true" />
       <div className="container hero-inner">
-        <div className="pill"><span className="dot" /> Open to Forward Deployed & AI Engineering roles</div>
         <h1>
           Hi, I'm {profile.short}.<br />
           <span className="grad">I ship production AI</span><br />that teams actually adopt.
@@ -330,7 +329,7 @@ function Contact() {
         <div className="contact card reveal">
           <span className="eyebrow mono">// contact</span>
           <h2>Have a messy problem AI could solve?</h2>
-          <p className="lead">I'd love to hear about it. I'm open to Forward Deployed Engineer, AI Engineer and GenAI solutions roles.</p>
+          <p className="lead">I'd love to hear about it — let's talk about turning it into a production AI system.</p>
           <div className="cta center">
             <a className="btn btn-primary" href={`mailto:${profile.email}`}>✉ {profile.email}</a>
             <button className="btn btn-ghost" onClick={copy}>{copied ? '✓ Copied' : 'Copy email'}</button>
