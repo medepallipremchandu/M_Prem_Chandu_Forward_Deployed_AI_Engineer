@@ -272,3 +272,23 @@ h4 { font-size: 1rem; }
   .modal { padding: 28px 22px; }
   .stat-value { font-size: 1.6rem; }
 }
+
+.pub-title:hover strong { color: var(--accent); }
+.pub-title .ext { color: var(--accent); font-size: 0.85rem; }
+.pub-links { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+.pub-links a {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+  border: 1px solid var(--border); color: var(--accent); transition: border-color 0.2s, background 0.2s;
+}
+.pub-links a:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+.pub-heading { margin: 48px 0 18px; }
+.pub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pub { display: flex; flex-direction: column; }
+.pub:hover { border-color: var(--accent); }
+.pub h3 { margin-top: 2px; line-height: 1.35; }
+.pub-title:hover h3 { color: var(--accent); }
+.pub .sub { margin-top: 6px; }
+.pub .desc { margin-top: 14px; }
+.pub .pub-links { margin-top: 18px; }
+@media (max-width: 760px) { .pub-grid { grid-template-columns: 1fr; } }

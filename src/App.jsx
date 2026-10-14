@@ -269,7 +269,7 @@ function Skills() {
 
 function Recognition() {
   return (
-    <Section id="recognition" eyebrow="// recognition" title="Awards, credentials & education">
+    <Section id="recognition" eyebrow="// recognition" title="Awards, credentials & research">
       <div className="rec-grid">
         <div className="card reveal">
           <h4 className="card-title">🏆 Awards</h4>
@@ -292,13 +292,6 @@ function Recognition() {
               <span className="muted">{e.school} · {e.period}</span>
             </div>
           ))}
-          <h4 className="card-title spaced">📄 Publications</h4>
-          {publications.map(p => (
-            <div className="row" key={p.title}>
-              <strong>{p.title}</strong>
-              <span className="muted">{p.venue} · {p.date}</span>
-            </div>
-          ))}
         </div>
         <div className="card reveal">
           <h4 className="card-title">⚡ Leadership & internships</h4>
@@ -310,6 +303,30 @@ function Recognition() {
             </div>
           ))}
         </div>
+      </div>
+
+      <h3 className="pub-heading reveal">📄 Publications</h3>
+      <div className="pub-grid">
+        {publications.map(p => (
+          <article className="card pub reveal" key={p.title}>
+            <div className="project-top">
+              <span className="cat mono">{p.venue} · {p.date}</span>
+            </div>
+            <a className="pub-title" href={p.url} target="_blank" rel="noreferrer">
+              <h3>{p.title} <span className="ext">↗</span></h3>
+            </a>
+            <p className="sub">{p.meta}</p>
+            <p className="desc">{p.description}</p>
+            <div className="tags">
+              {p.keywords.map(k => <span className="tag" key={k}>{k}</span>)}
+            </div>
+            <span className="pub-links">
+              {p.links.map(l => (
+                <a key={l.label} href={l.url} target="_blank" rel="noreferrer">{l.label} ↗</a>
+              ))}
+            </span>
+          </article>
+        ))}
       </div>
     </Section>
   )

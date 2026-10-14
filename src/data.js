@@ -227,8 +227,34 @@ export const education = [
 ]
 
 export const publications = [
-  { title: 'Crop Disease Identification using Convolutional Neural Networks', venue: 'IEEE ICICT', date: 'June 2023' },
-  { title: 'Assessing Crop Disease and Recommending Pesticide Application', venue: 'IJMRSET', date: 'April 2024' },
+  {
+    title: 'Crop Disease Identification using Convolutional Neural Network',
+    venue: 'IEEE ICICT 2023',
+    date: 'June 2023',
+    meta: 'International Conference on Inventive Computation Technologies · pp. 366–369 · Co-author',
+    description:
+      'Crop pests cause significant revenue loss for the agricultural sector, and efficient control depends on prompt, precise identification of both pests and the harm they cause. This paper presents a Convolutional Neural Network–based system for identifying crop diseases and insect pests, covering image dataset collection and preprocessing, CNN training, and accuracy verification, so accurate identification can inform Integrated Pest Management (IPM) decisions and effective pesticide use.',
+    keywords: ['Convolutional Neural Networks', 'Images', 'Preprocessing', 'Pest Management', 'Agriculture'],
+    url: 'https://ieeexplore.ieee.org/document/10134283',
+    links: [
+      { label: 'DOI', url: 'https://doi.org/10.1109/ICICT57646.2023.10134283' },
+      { label: 'Proceedings', url: 'https://ieeexplore.ieee.org/xpl/conhome/10133935/proceeding' },
+    ],
+  },
+  {
+    title: 'Assessing Crop Disease and Recommending Pesticide Application',
+    venue: 'IJMRSET',
+    date: 'April 2024',
+    meta: 'Vol. 7, Issue 4 · DOI 10.15680/IJMRSET.2024.0704143 · First author',
+    description:
+      'An integrated approach that maximizes crop health while lowering environmental hazards by evaluating crop disease severity and advising pesticide application. The methodology spans field assessment, symptom identification, severity rating, decision support systems, pesticide selection, application method, safety protocols, continuous observation and documentation — using machine learning models (Random Forest, Logistic Regression, Naïve Bayes, Decision Tree, SVM, KNN) and integrating biological, cultural, physical and chemical controls under Integrated Pest Management principles to give farmers a framework for protecting yields sustainably.',
+    keywords: ['Machine Learning', 'Model Evaluation', 'Disease', 'Images', 'Agriculture'],
+    url: 'https://www.ijmrset.com/upload/143_Assessing.pdf',
+    links: [
+      { label: 'PDF', url: 'https://www.ijmrset.com/upload/143_Assessing.pdf' },
+      { label: 'Issue', url: 'https://www.ijmrset.com/currentissue.php?id=49' },
+    ],
+  },
 ]
 
 export const extras = [
